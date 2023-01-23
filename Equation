@@ -1,0 +1,7 @@
+clear  %Clears variables
+clc  %Clears command window
+for velocity = 0:10:250  %Starting velocity at 0 going to 250 in steps of 10 (m/s)
+    density = 1.225;  %Density given (kg/m^3)
+    q = 0.5 * density * velocity^2; %Dynamic pressure equation (Pa)
+    disp("Dynamic pressure at " + int2str(velocity) + "m/s is " + int2str(q) + "Pa");  %Displaying velocity and pressure values
+end
